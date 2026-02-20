@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Questrial", sans-serif;
+}
+
+/* fondo */
+.fondo{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(#f2e9e0 50%, #d6c8b6 50%);
+}
+
+/* tarjeta */
+.card{
+    width:350px;
+    background:#efefef;
+    padding:40px 25px 90px;
+    border-radius:30px;
+    text-align:center;
+    position:relative;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+/* titulo */
+h1{
+    margin-bottom:20px;
+}
+
+/* formulario */
+.formulario{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.formulario input{
+    padding:12px;
+    border-radius:15px;
+    border:1px solid #bbb;
+    font-size:15px;
+}
+
+/* boton */
+.btn{
+    margin-top:10px;
+    background:#c8a779;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:20px;
+    cursor:pointer;
+    transition:.25s;
+    font-size:16px;
+}
+
+.btn:hover{
+    background:#b58950;
+}
+
+/* texto registro */
+.registro{
+    margin-top:10px;
+    font-size:14px;
+}
+
+.registro a{
+    color:#8b6b3c;
+    text-decoration:none;
+}
+
+/* imagen */
+.decoracion{
+    position:absolute;
+    bottom:-40px;
+    right:-60px;
+    width:230px;
+    pointer-events:none;
+}

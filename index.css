@@ -1,0 +1,60 @@
+/* RESET + TIPOGRAFIA */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Questrial', sans-serif;
+}
+
+/* FONDO MITAD MITAD */
+.fondo{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(#f2e9e0 50%, #d6c8b6 50%);
+}
+
+/* ---------- INDEX ---------- */
+
+.card{
+    width:320px;
+    text-align:center;
+    position:relative;
+}
+
+.logo-img{
+    width:260px;
+    margin-bottom:20px;
+}
+
+.bellota{
+    width:90px;
+    position:absolute;
+    top:100px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.botones{
+    margin-top:140px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    color:#6a624e;
+    border:2px solid #6a624e;
+    padding:12px 18px;
+    border-radius:20px;
+    background:#e7dbc7;
+    margin:5px;
+    transition:.25s;
+}
+
+.btn:hover{
+    background:#c98a3a;
+    color:white;
+    border-color:#c98a3a;
+}
+
