@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Evita rebotes extraños en móvil */
+}
+
+.app-container {
+    width: 100vw; /* 100% del ancho de pantalla */
+    height: 100vh; /* 100% del alto de pantalla */
+    background-color: #f7f3f0;
+    display: flex;
+    flex-direction: column; /* Organiza en columna vertical */
+}
+
+/* HEADER */
+.main-header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title { color: #a65e2e; font-size: 26px; font-weight: bold; }
+.header-icons { display: flex; gap: 20px; color: #d9c5b2; font-size: 22px; }
+.icon-wrapper { position: relative; }
+.badge { position: absolute; top: -5px; right: -5px; background: #f1c40f; color: white; font-size: 10px; padding: 2px 5px; border-radius: 50%; }
+
+/* CONTENIDO WRAPPER */
+.content-wrapper {
+    flex: 1; /* Ocupa todo el espacio entre el header y el nav */
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    overflow-y: auto; /* Permite scroll si la lista de actividad crece mucho */
+}
+
+/* TARJETA */
+.income-card {
+    background-color: #d98e54;
+    border-radius: 25px;
+    padding: 30px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%; /* Se alarga a todo el ancho */
+}
+
+/* BARRA GASTO */
+.add-expense-bar {
+    background-color: #8c4c27;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.add-expense-bar input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    outline: none;
+}
+
+.plus-button {
+    background-color: #d98e54;
+    width: 45px;
+    height: 45px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+/* CATEGORÍAS */
+.categories-grid {
+    display: flex;
+    justify-content: space-between; /* Distribuye iconos a lo largo de la pantalla */
+    padding: 15px 0;
+}
+
+.cat-item {
+    width: 65px;
+    height: 65px;
+    background: #fff;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    color: #4a90e2;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.cat-item.active { background: #d98e54; color: white; }
+
+/* --- LA COLUMNA FINAL QUE SE ALARGA --- */
+.activity-section {
+    flex-grow: 1; /* Esto alarga la sección hasta el fondo de la pantalla */
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.activity-list {
+    flex-grow: 1;
+    background: rgba(255,255,255,0.3); /* Un toque visual para ver el área */
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+/* NAV INFERIOR */
+.bottom-navigation {
+    height: 80px;
+    background: #bfa38a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-btn { color: white; font-size: 24px; }
+.main-money-btn {
+    background: #8c4c27;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #bfa38a;
+    margin-top: -35px;
+}

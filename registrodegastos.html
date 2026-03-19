@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mi Registro de Gastos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="registrodegastos.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="main-header">
+            <h1 class="header-title">Registro</h1>
+            <div class="header-icons">
+                <div class="icon-wrapper"><i class="fa-regular fa-bell"></i><span class="badge">1</span></div>
+                <div class="icon-wrapper"><i class="fa-regular fa-circle-user"></i></div>
+            </div>
+        </header>
+
+        <main class="content-wrapper">
+            <section class="income-card" onclick="cambiarIngreso()">
+                <div class="income-data">
+                    <span class="label">Balance Total</span>
+                    <h2 class="amount" id="balance">$<span id="monto-total">5000</span> <small>MXN</small></h2>
+                </div>
+                <div class="currency-info">
+                    <span class="flag">🇲🇽</span>
+                    <span class="currency-code">MXN <i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+            </section>
+
+            <section class="add-expense-bar">
+                <input type="number" id="input-gasto" placeholder="Monto del gasto..." inputmode="decimal">
+                <div class="plus-button" onclick="registrarGasto()"><i class="fa-solid fa-plus"></i></div>
+            </section>
+
+            <section class="categories-section">
+                <h3 class="section-subtitle">Selecciona Categoría:</h3>
+                <div class="categories-grid" id="categorias">
+                    <div class="cat-item active" onclick="seleccionarCat(this, 'Comida')"><i class="fa-solid fa-wine-glass"></i></div>
+                    <div class="cat-item" onclick="seleccionarCat(this, 'Hogar')"><i class="fa-solid fa-house-chimney"></i></div>
+                    <div class="cat-item" onclick="seleccionarCat(this, 'Compras')"><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="cat-item" onclick="seleccionarCat(this, 'Transporte')"><i class="fa-solid fa-bus"></i></div>
+                    <div class="cat-item" onclick="seleccionarCat(this, 'Salud')"><i class="fa-solid fa-heart-pulse"></i></div>
+                </div>
+                <p id="cat-seleccionada">Categoría: <strong>Comida</strong></p>
+            </section>
+
+            <section class="activity-section">
+                <h3 class="section-subtitle">Actividad Reciente:</h3>
+                <div class="activity-list" id="lista-actividad">
+                    <p class="empty-msg">No hay gastos hoy.</p>
+                </div>
+            </section>
+        </main>
+
+        <nav class="bottom-navigation">
+            <div class="nav-btn active"><i class="fa-solid fa-house"></i></div>
+            <div class="nav-btn"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="nav-btn main-money-btn"><i class="fa-solid fa-dollar-sign"></i></div>
+            <div class="nav-btn"><i class="fa-solid fa-leaf"></i></div>
+            <div class="nav-btn"><i class="fa-solid fa-gear"></i></div>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

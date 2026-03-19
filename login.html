@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Iniciar sesión</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
 </head>
 
 <body class="fondo">
 
 <div class="login-card">
-
     <h2>Iniciar sesión</h2>
 
-    <form class="login-form">
-        <input type="email" placeholder="Correo electrónico">
-        <input type="password" placeholder="Contraseña">
+    <form class="login-form" action="registrodegastos.html">
+        <input type="email" placeholder="Correo electrónico" required>
+        <input type="password" placeholder="Contraseña" required>
 
-        <button class="login-btn">Entrar</button>
+        <button type="submit" class="login-btn">Entrar</button>
     </form>
 
     <p class="crear">
@@ -29,7 +26,6 @@
     </p>
 
     <img src="ardilla.png" class="login-img">
-
 </div>
 
 </body>
