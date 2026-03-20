@@ -127,3 +127,25 @@ body, html {
 }
 
 .main-money-btn:active { transform: scale(0.9); }
+/* NAV INFERIOR */
+.bottom-navigation {
+    height: 80px;
+    background: #bfa38a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-btn { color: white; font-size: 24px; }
+.main-money-btn {
+    background: #8c4c27;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #bfa38a;
+    margin-top: -35px;
+}
