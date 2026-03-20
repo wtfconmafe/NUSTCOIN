@@ -57,3 +57,12 @@ function registrarGasto() {
     input.value = '';
     if (window.navigator.vibrate) window.navigator.vibrate(50);
 }
+// Busca el botón de la campana en la barra de navegación
+const botonCampana = document.querySelector('.fa-bell').parentElement;
+
+if (botonCampana) {
+    botonCampana.onclick = function() {
+        // MUY IMPORTANTE: El nombre debe ser idéntico al de tu archivo
+        window.location.href = 'notificaciones.html'; 
+    };
+}
