@@ -9,9 +9,9 @@ const myChart = new Chart(ctx, {
             backgroundColor: [
                 '#d98e54', // Naranja (Comida)
                 '#a65e2e', // Marrón (Hogar)
-                '#4a90e2', // Azul (Compras)
+                '#5593da', // Azul (Compras)
                 '#bfa38a', // Café claro (Transporte)
-                '#e74c3c'  // Rojo (Salud)
+                '#d8c070'  // Rojo (Salud)
             ],
             borderWidth: 0,
             hoverOffset: 10
